@@ -43,14 +43,21 @@ for (let i = 1; i <= 10; i++) {
     }
 }
 
-const Data = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26";
+//part3//
 
-let rows = Data.split("\n"); // Split '\n'//
+const Data = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26"; 
 
-// Loop through each row
-for (let i = 0; i < rows.length; i++) {
-    let cells = rows[i].split(","); // Split each row by comma //
-    console.log(cells); // will make 5 rows//
+let rows = Data.split("\n");
+console.log(rows);    //log only once, previous code made the rows loop
+
+let row1 = rows[1].split(","); // Split each row by comma //
+let row2 = rows[2].split(",");
+let row3 = rows[3].split(",");
+let row4 = rows[4].split(",");
+for (let i = 0; i < rows.length; i++) { // Split each row by comma //
+    console.log(rows[i]);  // will make 5 rows//
 }
+
+
 
 
